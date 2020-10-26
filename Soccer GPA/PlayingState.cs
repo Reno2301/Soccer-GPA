@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Soccer_GPA.GameObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,14 +9,14 @@ namespace Soccer_GPA
 {
     class PlayingState : GameObjectList
     {
-        GameObjectList players;
+        Player thePlayer;
 
         public PlayingState()
         {
             this.Add(new SpriteGameObject(""));
 
-            players = new GameObjectList();
-            this.Add(players);
+            thePlayer = new Player();
+            this.Add(thePlayer);
         }
     }
 }
