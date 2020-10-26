@@ -7,16 +7,13 @@ namespace Soccer_GPA
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
-    public class Game1 : Game
+    public class Game1 : GameEnvironment
     {
-        GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
-
         public Game1()
         {
-            graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
+
 
         /// <summary>
         /// Allows the game to perform any initialization it needs to before starting to run.
@@ -39,8 +36,13 @@ namespace Soccer_GPA
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            screen = new Point(800, 600);
+            ApplyResolutionSettings();
 
             // TODO: use this.Content to load your game content here
+
+            GameStateManager.AddGameState("PlayingState", new PlayingState());
+            GameStateManager.SwitchTo("PlayingState");
         }
 
         /// <summary>
