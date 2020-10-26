@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace Soccer_GPA
 {
-    class PlayingState
+    class PlayingState : GameObjectList
     {
+        GameObjectList players;
+        TextGameObject score;
 
+        public PlayingState()
+        {
+            this.Add(new SpriteGameObject(""));
+
+            players = new GameObjectList();
+            this.Add(players);
+        }
     }
 }
