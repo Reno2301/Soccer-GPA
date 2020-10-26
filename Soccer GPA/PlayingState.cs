@@ -9,7 +9,6 @@ namespace Soccer_GPA
     class PlayingState : GameObjectList
     {
         GameObjectList players;
-        TextGameObject score;
 
         public PlayingState()
         {
