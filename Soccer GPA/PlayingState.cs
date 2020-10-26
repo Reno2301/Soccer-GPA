@@ -12,7 +12,7 @@ namespace Soccer_GPA
 
         public PlayingState()
         {
-            this.Add(new SpriteGameObject("Soccer Field"));
+            this.Add(new SpriteGameObject(""));
 
             players = new GameObjectList();
             this.Add(players);
