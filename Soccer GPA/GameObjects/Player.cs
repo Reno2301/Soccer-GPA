@@ -13,7 +13,7 @@ namespace Soccer_GPA.GameObjects
         {
            // SpriteGameObject player = new SpriteGameObject("characterWhite(1)");
 
-            player.Position = new Vector2(50, 50);
+          //  player.Position = new Vector2(50, 50);
         }
     }
 }

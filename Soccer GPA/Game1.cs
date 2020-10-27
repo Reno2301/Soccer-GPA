@@ -36,7 +36,6 @@ namespace Soccer_GPA
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            screen = new Point(800, 600);
             ApplyResolutionSettings();
 
             // TODO: use this.Content to load your game content here
